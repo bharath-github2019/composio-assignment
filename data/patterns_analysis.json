@@ -1,0 +1,338 @@
+{
+  "auth_distribution": {
+    "by_category": {
+      "CRM": {
+        "API_Key": 8,
+        "OAuth2": 5,
+        "Basic_Auth": 3
+      },
+      "Support": {
+        "OAuth2": 8,
+        "API_Key": 7,
+        "Basic_Auth": 6
+      },
+      "Messaging": {
+        "OAuth2": 6,
+        "API_Key": 6,
+        "Basic_Auth": 1,
+        "JWT": 1
+      },
+      "Marketing": {
+        "API_Key": 8,
+        "OAuth2": 6,
+        "Basic_Auth": 1
+      },
+      "Ecommerce": {
+        "API_Key": 9,
+        "OAuth2": 7,
+        "Basic_Auth": 3,
+        "JWT": 1
+      },
+      "Data/SEO": {
+        "API_Key": 8,
+        "Basic_Auth": 4,
+        "OAuth2": 2
+      },
+      "DevTools": {
+        "API_Key": 10,
+        "OAuth2": 7,
+        "Basic_Auth": 3
+      },
+      "Productivity": {
+        "OAuth2": 10,
+        "API_Key": 7,
+        "JWT": 1
+      },
+      "Finance": {
+        "OAuth2": 7,
+        "API_Key": 6,
+        "Session": 1
+      },
+      "AI/Media": {
+        "API_Key": 8,
+        "OAuth2": 3,
+        "Basic_Auth": 2
+      }
+    },
+    "overall_top_3": [
+      {
+        "method": "API_Key",
+        "count": 77
+      },
+      {
+        "method": "OAuth2",
+        "count": 61
+      },
+      {
+        "method": "Basic_Auth",
+        "count": 23
+      }
+    ]
+  },
+  "gating_heatmap": {
+    "self_serve_rate_by_category": {
+      "Data/SEO": "60.0%",
+      "Support": "70.0%",
+      "CRM": "90.0%",
+      "Marketing": "90.0%",
+      "Finance": "90.0%",
+      "Messaging": "100.0%",
+      "Ecommerce": "100.0%",
+      "DevTools": "100.0%",
+      "Productivity": "100.0%",
+      "AI/Media": "100.0%"
+    },
+    "most_gated_categories": [
+      "Data/SEO",
+      "Support",
+      "CRM"
+    ]
+  },
+  "blockers_analysis": {
+    "top_5_blockers": [
+      {
+        "blocker": "Enterprise/Partner-gated",
+        "count": 8
+      },
+      {
+        "blocker": "Complex auth setup",
+        "count": 3
+      },
+      {
+        "blocker": "API access gating",
+        "count": 2
+      }
+    ],
+    "blocker_by_category": {
+      "CRM": {
+        "Ready": 9,
+        "Needs_Work": 1,
+        "Blocked": 0
+      },
+      "Support": {
+        "Ready": 7,
+        "Needs_Work": 1,
+        "Blocked": 2
+      },
+      "Messaging": {
+        "Ready": 9,
+        "Needs_Work": 1,
+        "Blocked": 0
+      },
+      "Marketing": {
+        "Ready": 9,
+        "Needs_Work": 0,
+        "Blocked": 1
+      },
+      "Ecommerce": {
+        "Ready": 10,
+        "Needs_Work": 0,
+        "Blocked": 0
+      },
+      "Data/SEO": {
+        "Ready": 6,
+        "Needs_Work": 4,
+        "Blocked": 0
+      },
+      "DevTools": {
+        "Ready": 10,
+        "Needs_Work": 0,
+        "Blocked": 0
+      },
+      "Productivity": {
+        "Ready": 9,
+        "Needs_Work": 1,
+        "Blocked": 0
+      },
+      "Finance": {
+        "Ready": 8,
+        "Needs_Work": 2,
+        "Blocked": 0
+      },
+      "AI/Media": {
+        "Ready": 10,
+        "Needs_Work": 0,
+        "Blocked": 0
+      }
+    },
+    "buildability_totals": {
+      "Ready": 87,
+      "Needs_Work": 10,
+      "Blocked": 3
+    }
+  },
+  "easy_wins_matrix": {
+    "criteria": "api_breadth=Broad AND self_serve=True AND OAuth2 in auth_methods",
+    "apps": [
+      "HubSpot",
+      "Pipedrive",
+      "Zoho CRM",
+      "Monday CRM",
+      "Zendesk",
+      "Intercom",
+      "Jira Service Management",
+      "Help Scout",
+      "Zoho Desk",
+      "Front",
+      "Slack",
+      "Microsoft Teams",
+      "Discord",
+      "RingCentral",
+      "Zoom",
+      "Mailchimp",
+      "HubSpot Marketing",
+      "Klaviyo",
+      "Constant Contact",
+      "Drip",
+      "Shopify",
+      "Stripe",
+      "WooCommerce",
+      "BigCommerce",
+      "Square",
+      "PayPal",
+      "Magento",
+      "Google Analytics",
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Jira",
+      "Linear",
+      "PagerDuty",
+      "Sentry",
+      "Notion",
+      "Airtable",
+      "Asana",
+      "Trello",
+      "ClickUp",
+      "Monday.com",
+      "Google Workspace",
+      "Dropbox",
+      "Box",
+      "QuickBooks",
+      "Xero",
+      "Brex",
+      "Ramp",
+      "Gusto",
+      "Wave",
+      "FreshBooks"
+    ],
+    "total_easy_wins": 51,
+    "categories_represented": {
+      "Productivity": 9,
+      "Ecommerce": 7,
+      "DevTools": 7,
+      "Finance": 7,
+      "Support": 6,
+      "Messaging": 5,
+      "Marketing": 5,
+      "CRM": 4,
+      "Data/SEO": 1
+    }
+  },
+  "mcp_readiness_signal": {
+    "apps_with_mcp": [
+      "Salesforce",
+      "HubSpot",
+      "Zendesk",
+      "Intercom",
+      "ServiceNow",
+      "Jira Service Management",
+      "Slack",
+      "Discord",
+      "Telegram",
+      "HubSpot Marketing",
+      "Shopify",
+      "Stripe",
+      "Google Analytics",
+      "Segment",
+      "PitchBook",
+      "GitHub",
+      "GitLab",
+      "Jira",
+      "Linear",
+      "Notion",
+      "Google Workspace",
+      "OpenAI",
+      "Anthropic",
+      "Cohere"
+    ],
+    "total_mcp_count": 24,
+    "mcp_by_category": {
+      "CRM": {
+        "count": 2,
+        "apps": [
+          "Salesforce",
+          "HubSpot"
+        ]
+      },
+      "Support": {
+        "count": 4,
+        "apps": [
+          "Zendesk",
+          "Intercom",
+          "ServiceNow",
+          "Jira Service Management"
+        ]
+      },
+      "Messaging": {
+        "count": 3,
+        "apps": [
+          "Slack",
+          "Discord",
+          "Telegram"
+        ]
+      },
+      "Marketing": {
+        "count": 1,
+        "apps": [
+          "HubSpot Marketing"
+        ]
+      },
+      "Ecommerce": {
+        "count": 2,
+        "apps": [
+          "Shopify",
+          "Stripe"
+        ]
+      },
+      "Data/SEO": {
+        "count": 3,
+        "apps": [
+          "Google Analytics",
+          "Segment",
+          "PitchBook"
+        ]
+      },
+      "DevTools": {
+        "count": 4,
+        "apps": [
+          "GitHub",
+          "GitLab",
+          "Jira",
+          "Linear"
+        ]
+      },
+      "Productivity": {
+        "count": 2,
+        "apps": [
+          "Notion",
+          "Google Workspace"
+        ]
+      },
+      "AI/Media": {
+        "count": 3,
+        "apps": [
+          "OpenAI",
+          "Anthropic",
+          "Cohere"
+        ]
+      }
+    }
+  },
+  "total_apps_analyzed": 100,
+  "buildability_summary": {
+    "ready_pct": 87.0,
+    "needs_work_pct": 10.0,
+    "blocked_pct": 3.0
+  }
+}

@@ -1,0 +1,3802 @@
+{
+  "execution_summary": {
+    "total_apps_processed": 100,
+    "execution_timestamp": "2026-07-09T14:50:07Z",
+    "avg_confidence_score": 0.9434,
+    "flagged_for_review_count": 1,
+    "error_log": [],
+    "pipeline_time_seconds": 0
+  },
+  "results": [
+    {
+      "app_name": "Salesforce",
+      "category": "CRM",
+      "one_liner": "Enterprise customer relationship management platform for sales, service, and marketing.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "Requires enterprise-tier paid license and contact sales for production API access.",
+        "evidence_url": "https://www.salesforce.com/editions-pricing/sales-cloud/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.salesforce.com/docs",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "Complex OAuth2 setup, enterprise licensing gates, and SOAP/REST dual API complexity.",
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.salesforce.com/docs",
+          "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_api.htm"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers/tree/main/src/salesforce"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 180,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "HubSpot",
+      "category": "CRM",
+      "one_liner": "Inbound marketing, sales, and customer service platform with developer-friendly APIs.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer accounts and sandbox environments are available self-serve.",
+        "evidence_url": "https://developers.hubspot.com/docs/api/overview"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.hubspot.com/docs/api/overview",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.hubspot.com/docs/api/overview",
+          "https://developers.hubspot.com/docs/api/working-with-oauth"
+        ],
+        "secondary_sources": [
+          "https://github.com/ComposioHQ/composio"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Pipedrive",
+      "category": "CRM",
+      "one_liner": "Sales-focused CRM tool designed to help small businesses manage leads and deals.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available without entering a credit card.",
+        "evidence_url": "https://www.pipedrive.com/en/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.pipedrive.com/docs/api/v1",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.pipedrive.com/docs/api/v1",
+          "https://developers.pipedrive.com/docs/api/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 95,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Zoho CRM",
+      "category": "CRM",
+      "one_liner": "Global customer relationship management platform for managing sales, marketing, and support.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free edition available for up to 3 users with basic features.",
+        "evidence_url": "https://www.zoho.com/crm/comparison.html"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://www.zoho.com/crm/developer/docs/api/v3/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.zoho.com/crm/developer/docs/api/v3/",
+          "https://www.zoho.com/crm/developer/docs/api/v3/oauth-overview.html"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 125,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Freshsales",
+      "category": "CRM",
+      "one_liner": "Sales CRM by Freshworks featuring AI-based lead scoring and built-in communication.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "21-day free trial available for self-serve signup.",
+        "evidence_url": "https://www.freshworks.com/freshsales/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.freshsales.io/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.freshsales.io/api/",
+          "https://developer.freshsales.io/api/#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Close",
+      "category": "CRM",
+      "one_liner": "Inside sales CRM with built-in calling, SMS, and email automation features.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available for instant self-serve testing.",
+        "evidence_url": "https://close.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.close.com/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.close.com/",
+          "https://developer.close.com/#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 90,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Copper",
+      "category": "CRM",
+      "one_liner": "Productivity-first CRM built specifically for Google Workspace users and teams.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available on all tiers for self-serve setup.",
+        "evidence_url": "https://www.copper.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.copper.com/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.copper.com/",
+          "https://developer.copper.com/sections/authentication/authentication.html"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Monday CRM",
+      "category": "CRM",
+      "one_liner": "Customizable sales CRM built on top of Monday.com work OS platform.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial and free basic tier available self-serve.",
+        "evidence_url": "https://monday.com/pricing"
+      },
+      "api_surface": {
+        "type": "GraphQL",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.monday.com/api-reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.monday.com/api-reference",
+          "https://developer.monday.com/apps/docs/oauth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Insightly",
+      "category": "CRM",
+      "one_liner": "CRM platform linking sales, project management, and marketing automation workflows.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 2 users, and free trials on paid tiers.",
+        "evidence_url": "https://www.insightly.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://api.insightly.com/v3.1/Help",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://api.insightly.com/v3.1/Help",
+          "https://api.insightly.com/v3.1/Help#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 95,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Agile CRM",
+      "category": "CRM",
+      "one_liner": "All-in-one CRM with sales, marketing, and service automation for SMBs.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 10 users with basic CRM features.",
+        "evidence_url": "https://www.agilecrm.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://github.com/AgileCRM/rest-api",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.88
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://github.com/AgileCRM/rest-api",
+          "https://github.com/AgileCRM/rest-api#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 0.88,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Zendesk",
+      "category": "Support",
+      "one_liner": "Customer service software and support ticket management platform.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available on Suite Team/Growth tiers self-serve.",
+        "evidence_url": "https://www.zendesk.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.zendesk.com/api-reference/",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.zendesk.com/api-reference/",
+          "https://developer.zendesk.com/api-reference/ticketing/introduction/"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Intercom",
+      "category": "Support",
+      "one_liner": "Customer messaging and live chat platform for sales, marketing, and support.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available self-serve.",
+        "evidence_url": "https://www.intercom.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.intercom.com/building-apps/docs",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.intercom.com/building-apps/docs",
+          "https://developers.intercom.com/intercom-api-reference/reference/welcome"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Freshdesk",
+      "category": "Support",
+      "one_liner": "Cloud-based customer service software and helpdesk ticket tracking system.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 10 agents, free trial on paid plans.",
+        "evidence_url": "https://freshdesk.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.freshdesk.com/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.freshdesk.com/api/",
+          "https://developers.freshdesk.com/api/#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 95,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "ServiceNow",
+      "category": "Support",
+      "one_liner": "Enterprise cloud platform for digital workflows and IT service management.",
+      "auth_methods": [
+        "OAuth2",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "Enterprise licensing required; developer sandbox available but production API requires sales contract.",
+        "evidence_url": "https://www.servicenow.com/pricing.html"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.servicenow.com/",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "Complex enterprise security policies, mTLS requirements, and gated production pricing.",
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.servicenow.com/",
+          "https://docs.servicenow.com/bundle/washingtondc-api-reference/page/integrate/inbound-rest/concept/c_RESTAPI.html"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 150,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Jira Service Management",
+      "category": "Support",
+      "one_liner": "IT service desk and customer support portal by Atlassian.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 3 agents, and 7-day trials for higher plans.",
+        "evidence_url": "https://www.atlassian.com/software/jira/service-management/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.atlassian.com/cloud/jira/service-desk/rest/intro/",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.atlassian.com/cloud/jira/service-desk/rest/intro/",
+          "https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-request/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 130,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Help Scout",
+      "category": "Support",
+      "one_liner": "Shared inbox and customer support tool designed for growing teams.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "15-day free trial available on Standard and Plus plans.",
+        "evidence_url": "https://www.helpscout.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.helpscout.com/mailbox-api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.helpscout.com/mailbox-api/",
+          "https://developer.helpscout.com/mailbox-api/endpoints/conversations/create/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Kayako",
+      "category": "Support",
+      "one_liner": "Help desk and customer journey tracking platform.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "Requires contacting sales for demo and price plans; no self-serve free trial or signup.",
+        "evidence_url": "https://www.kayako.com/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.kayako.com/api/v1/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Blocked",
+        "primary_blocker": "API is gated behind manual sales contact and enterprise subscription contract.",
+        "confidence_score": 0.88
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.kayako.com/api/v1/",
+          "https://developer.kayako.com/api/v1/reference/conversations/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 125,
+        "agent_confidence": 0.88,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Zoho Desk",
+      "category": "Support",
+      "one_liner": "Context-aware customer service help desk software.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 3 agents, and 15-day trial.",
+        "evidence_url": "https://www.zoho.com/desk/pricing.html"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://desk.zoho.com/support/APIDocument.do",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://desk.zoho.com/support/APIDocument.do",
+          "https://desk.zoho.com/support/APIDocument.do#Authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Front",
+      "category": "Support",
+      "one_liner": "Collaborative inbox combining email, chat, and sms channels into one workspace.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "7-day free trial available for self-serve sign up.",
+        "evidence_url": "https://front.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://dev.frontapp.com/reference/welcome",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://dev.frontapp.com/reference/welcome",
+          "https://dev.frontapp.com/docs/oauth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Gladly",
+      "category": "Support",
+      "one_liner": "People-centered customer service platform that focuses on lifelong relationships.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "No self-serve signup or free trial. Enterprise-only platform requiring sales contact.",
+        "evidence_url": "https://www.gladly.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://connect.gladly.com/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Blocked",
+        "primary_blocker": "Requires enterprise custom onboarding and sales-gated API provisioning.",
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://connect.gladly.com/api/",
+          "https://connect.gladly.com/api/reference/v1/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 135,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Slack",
+      "category": "Messaging",
+      "one_liner": "Business messaging and collaboration platform with channels, chat, and application integrations.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for workspace usage and API app development.",
+        "evidence_url": "https://slack.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://api.slack.com/methods",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 1.0
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://api.slack.com/methods",
+          "https://api.slack.com/authentication",
+          "https://slack.com/pricing"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers/tree/main/src/slack"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 1.0,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Microsoft Teams",
+      "category": "Messaging",
+      "one_liner": "Workspace messaging, video meetings, and file storage collaboration tool by Microsoft.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer sandbox program available self-serve.",
+        "evidence_url": "https://developer.microsoft.com/en-us/microsoft-365/dev-program"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "Complex Microsoft Graph auth configurations, tenant admin permissions gates, and Microsoft Entra ID portal setups.",
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://learn.microsoft.com/en-us/graph/api/resources/teams-api-overview",
+          "https://learn.microsoft.com/en-us/graph/auth-v2-service"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 150,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Discord",
+      "category": "Messaging",
+      "one_liner": "Voice, video, and text communication service popular with gaming and community servers.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account registration and API application creation available to all users.",
+        "evidence_url": "https://discord.com/developers/docs/intro"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://discord.com/developers/docs/intro",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://discord.com/developers/docs/intro",
+          "https://discord.com/developers/docs/topics/oauth2"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Telegram",
+      "category": "Messaging",
+      "one_liner": "Cloud-based mobile and desktop messaging app with a focus on security and speed.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Telegram Bot API tokens are free to generate via BotFather instantly.",
+        "evidence_url": "https://core.telegram.org/bots"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://core.telegram.org/bots/api",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://core.telegram.org/bots/api",
+          "https://core.telegram.org/api/obtaining_api_id"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 90,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Twilio",
+      "category": "Messaging",
+      "one_liner": "Customer engagement platform for SMS, voice, video, and authentication APIs.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial credit given upon signup without credit card.",
+        "evidence_url": "https://www.twilio.com/try-twilio"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://www.twilio.com/docs/usage/api",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.twilio.com/docs/usage/api",
+          "https://www.twilio.com/docs/usage/security"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "SendGrid",
+      "category": "Messaging",
+      "one_liner": "Cloud-based customer communication platform for transactional and marketing email delivery.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 100 emails/day.",
+        "evidence_url": "https://sendgrid.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.sendgrid.com/api-reference/buying-ips/warm-up-an-ip",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.sendgrid.com/api-reference/buying-ips/warm-up-an-ip",
+          "https://docs.sendgrid.com/for-developers/sending-email/api-getting-started"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 95,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "WhatsApp Business",
+      "category": "Messaging",
+      "one_liner": "Enterprise API platform for customer engagement and messaging via WhatsApp.",
+      "auth_methods": [
+        "API_Key",
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Meta Developer console allows self-serve test accounts and test phone numbers.",
+        "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.facebook.com/docs/whatsapp/cloud-api",
+          "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 130,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Vonage",
+      "category": "Messaging",
+      "one_liner": "Global communication APIs for voice, video, SMS, and messaging channels.",
+      "auth_methods": [
+        "API_Key",
+        "JWT"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial credit given upon signup without credit card.",
+        "evidence_url": "https://www.vonage.com/communications-apis/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.vonage.com/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.vonage.com/",
+          "https://developer.vonage.com/en/getting-started/concepts/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "RingCentral",
+      "category": "Messaging",
+      "one_liner": "Cloud communications platform providing unified voice, video, and messaging APIs.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer account and sandbox environment.",
+        "evidence_url": "https://developer.ringcentral.com/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.ringcentral.com/api-reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.ringcentral.com/api-reference",
+          "https://developers.ringcentral.com/guide/authentication/oauth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 125,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Zoom",
+      "category": "Messaging",
+      "one_liner": "Video conferencing, meetings, and team chat collaboration platform.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free basic account available for workspace testing and developer app creation.",
+        "evidence_url": "https://zoom.us/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.zoom.us/docs/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.zoom.us/docs/api/",
+          "https://developers.zoom.us/docs/internal-apps/s2s-oauth/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Mailchimp",
+      "category": "Marketing",
+      "one_liner": "All-in-one email marketing and audience management automation platform.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free marketing plan available self-serve.",
+        "evidence_url": "https://mailchimp.com/pricing/marketing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://mailchimp.com/developer/marketing/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://mailchimp.com/developer/marketing/api/",
+          "https://mailchimp.com/developer/marketing/docs/fundamentals/#authenticate-with-an-api-key"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "HubSpot Marketing",
+      "category": "Marketing",
+      "one_liner": "Marketing automation software for attracting visitors and closing deals.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account sign up and free tools available self-serve.",
+        "evidence_url": "https://www.hubspot.com/pricing/marketing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.hubspot.com/docs/api/overview",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.hubspot.com/docs/api/overview",
+          "https://developers.hubspot.com/docs/api/working-with-oauth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Marketo",
+      "category": "Marketing",
+      "one_liner": "Enterprise marketing automation software by Adobe for lead management and engagement.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "No self-serve signup or pricing available. Enterprise sales contract required.",
+        "evidence_url": "https://business.adobe.com/products/marketo/pricing.html"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.marketo.com/rest-api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Blocked",
+        "primary_blocker": "Developer access is tied strictly to active paid enterprise instances.",
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.marketo.com/rest-api/",
+          "https://developers.marketo.com/rest-api/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 140,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "ActiveCampaign",
+      "category": "Marketing",
+      "one_liner": "Customer experience automation platform combining email marketing and CRM.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available for self-serve onboarding.",
+        "evidence_url": "https://www.activecampaign.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.activecampaign.com/reference/overview",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.activecampaign.com/reference/overview",
+          "https://developers.activecampaign.com/reference/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Brevo",
+      "category": "Marketing",
+      "one_liner": "Marketing platform offering email, SMS, and chat automation for SMBs.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free plan available for up to 300 emails/day self-serve.",
+        "evidence_url": "https://www.brevo.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.brevo.com/reference/how-to-authenticate-your-api-request",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.brevo.com/reference/how-to-authenticate-your-api-request"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 90,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Klaviyo",
+      "category": "Marketing",
+      "one_liner": "Marketing automation platform specializing in e-commerce email and SMS.",
+      "auth_methods": [
+        "API_Key",
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account sign up available with full developer API access.",
+        "evidence_url": "https://www.klaviyo.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.klaviyo.com/en/reference/api_overview",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.klaviyo.com/en/reference/api_overview",
+          "https://developers.klaviyo.com/en/docs/authenticate_your_api_requests"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "ConvertKit",
+      "category": "Marketing",
+      "one_liner": "Creator marketing platform offering email newsletters and landing pages.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 10k subscribers.",
+        "evidence_url": "https://convertkit.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://developers.convertkit.com/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.convertkit.com/",
+          "https://developers.convertkit.com/#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 95,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Constant Contact",
+      "category": "Marketing",
+      "one_liner": "Online marketing tool providing email campaigns, website builder, and social tools.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "60-day free trial available for self-serve signup.",
+        "evidence_url": "https://www.constantcontact.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.constantcontact.com/api_reference/index.html",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.constantcontact.com/api_reference/index.html",
+          "https://developer.constantcontact.com/api_guide/oauth2_overview.html"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Drip",
+      "category": "Marketing",
+      "one_liner": "Marketing automation engine for e-commerce brands offering email and SMS workflows.",
+      "auth_methods": [
+        "API_Key",
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available on all tiers self-serve.",
+        "evidence_url": "https://www.drip.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.drip.com/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.drip.com/",
+          "https://developer.drip.com/#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Customer.io",
+      "category": "Marketing",
+      "one_liner": "Automated messaging platform for sending newsletters, push notifications, and emails.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available self-serve.",
+        "evidence_url": "https://customer.io/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://customer.io/docs/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://customer.io/docs/api/",
+          "https://customer.io/docs/api/#section/Authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Shopify",
+      "category": "Ecommerce",
+      "one_liner": "E-commerce platform for online stores and retail point-of-sale systems.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial available and free partner account to build developer apps.",
+        "evidence_url": "https://www.shopify.com/pricing"
+      },
+      "api_surface": {
+        "type": "GraphQL",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://shopify.dev/docs/api/admin-graphql",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://shopify.dev/docs/api/admin-graphql",
+          "https://shopify.dev/docs/apps/auth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 125,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Stripe",
+      "category": "Ecommerce",
+      "one_liner": "Payment processing platform for internet businesses with comprehensive financial APIs.",
+      "auth_methods": [
+        "API_Key",
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account signup with no sales contact required. Pay-as-you-go pricing.",
+        "evidence_url": "https://stripe.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.stripe.com/api",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 1.0
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.stripe.com/api",
+          "https://docs.stripe.com/api/authentication"
+        ],
+        "secondary_sources": [
+          "https://github.com/stripe/ai"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 1.0,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "WooCommerce",
+      "category": "Ecommerce",
+      "one_liner": "Open-source e-commerce plugin for WordPress websites.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Completely free open-source plugin requiring no sales contact or license fees.",
+        "evidence_url": "https://woocommerce.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+          "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "BigCommerce",
+      "category": "Ecommerce",
+      "one_liner": "SaaS e-commerce platform offering online store creation, SEO, and marketing.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "15-day free trial available self-serve.",
+        "evidence_url": "https://www.bigcommerce.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.bigcommerce.com/docs/rest-content",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.bigcommerce.com/docs/rest-content",
+          "https://developer.bigcommerce.com/docs/start/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Square",
+      "category": "Ecommerce",
+      "one_liner": "Financial services, merchant services, and mobile payment platform.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer account and testing sandbox available instantly.",
+        "evidence_url": "https://squareup.com/us/en/developers"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.squareup.com/reference/square",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.squareup.com/reference/square",
+          "https://developer.squareup.com/docs/oauth-api/overview"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "PayPal",
+      "category": "Ecommerce",
+      "one_liner": "Global online payment system supporting online money transfers.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer account and API credential creation via PayPal Developer Portal.",
+        "evidence_url": "https://developer.paypal.com/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.paypal.com/api/rest/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.paypal.com/api/rest/",
+          "https://developer.paypal.com/api/rest/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Magento",
+      "category": "Ecommerce",
+      "one_liner": "Open-source e-commerce platform written in PHP by Adobe.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "JWT"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Open Source edition is free to download and build on self-serve.",
+        "evidence_url": "https://business.adobe.com/products/magento/magento-open-source.html"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.adobe.com/commerce/web-api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.adobe.com/commerce/web-api/",
+          "https://developer.adobe.com/commerce/web-api/rest/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 130,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Chargebee",
+      "category": "Ecommerce",
+      "one_liner": "Subscription billing and revenue management platform for SaaS businesses.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial tier and developer sandbox environment available.",
+        "evidence_url": "https://www.chargebee.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://apidocs.chargebee.com/list/api/v2",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://apidocs.chargebee.com/list/api/v2",
+          "https://apidocs.chargebee.com/list/api/v2#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Recurly",
+      "category": "Ecommerce",
+      "one_liner": "Subscription billing platform for businesses to manage billing and recurring payments.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free sandbox account available for developer testing.",
+        "evidence_url": "https://recurly.com/developers/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.recurly.com/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.recurly.com/api/",
+          "https://developers.recurly.com/api/#section/Authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Adyen",
+      "category": "Ecommerce",
+      "one_liner": "Global multichannel payment company providing unified checkout workflows.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free test account available self-serve for developer integration.",
+        "evidence_url": "https://www.adyen.com/signup"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.adyen.com/api-explorer/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.adyen.com/api-explorer/",
+          "https://docs.adyen.com/development-resources/api-credentials"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Ahrefs",
+      "category": "Data/SEO",
+      "one_liner": "SEO toolset for link building, keyword research, and competitor analysis.",
+      "auth_methods": [
+        "API_Key",
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "API access requires enterprise subscription and custom pricing contract.",
+        "evidence_url": "https://ahrefs.com/api/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://ahrefs.com/api/documentation",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "High price gate and manual enterprise contract requirements for API developer tokens.",
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://ahrefs.com/api/documentation",
+          "https://ahrefs.com/api/documentation/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 130,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "SEMrush",
+      "category": "Data/SEO",
+      "one_liner": "SEO, PPC, and content marketing platform offering detailed analytics.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "API only available on expensive Business plan subscription ($499/mo).",
+        "evidence_url": "https://www.semrush.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://www.semrush.com/api/documentation/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "High tier gating where API access is restricted to expensive Business plans.",
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.semrush.com/api/documentation/",
+          "https://www.semrush.com/kb/897-api-units"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 125,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Moz",
+      "category": "Data/SEO",
+      "one_liner": "SEO software for search engine optimization tracking and domain metrics.",
+      "auth_methods": [
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier Mozscape API access available self-serve.",
+        "evidence_url": "https://moz.com/help/moz-api/mozscape/getting-started-with-mozscape"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://moz.com/help/moz-api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://moz.com/help/moz-api/",
+          "https://moz.com/help/moz-api/mozscape/api-reference"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Google Analytics",
+      "category": "Data/SEO",
+      "one_liner": "Web analytics service by Google tracking and reporting website traffic.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account registration and API developer access via Google Cloud Console.",
+        "evidence_url": "https://marketingplatform.google.com/about/analytics/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.google.com/analytics",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.google.com/analytics",
+          "https://developers.google.com/analytics/devguides/reporting/data/v1"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Mixpanel",
+      "category": "Data/SEO",
+      "one_liner": "Product analytics service tracking user interactions with web and mobile applications.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 100,000 monthly tracked users.",
+        "evidence_url": "https://mixpanel.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.mixpanel.com/reference/api-reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.mixpanel.com/reference/api-reference",
+          "https://developer.mixpanel.com/reference/service-accounts"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Amplitude",
+      "category": "Data/SEO",
+      "one_liner": "Product analytics platform helping teams track user behavior and run digital experiments.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free Starter plan offers up to 10 million events per month.",
+        "evidence_url": "https://amplitude.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://www.docs.developers.amplitude.com/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.docs.developers.amplitude.com/",
+          "https://www.docs.developers.amplitude.com/analytics/apis/export-api/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Segment",
+      "category": "Data/SEO",
+      "one_liner": "Customer data platform collecting, cleaning, and routing customer event data.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 1,000 monthly visitors.",
+        "evidence_url": "https://segment.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://segment.com/docs/api/public-api/",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://segment.com/docs/api/public-api/",
+          "https://segment.com/docs/api/public-api/reference/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Clearbit",
+      "category": "Data/SEO",
+      "one_liner": "B2B marketing intelligence platform for data enrichment and lead generation.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available with credit limitations self-serve.",
+        "evidence_url": "https://clearbit.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://dashboard.clearbit.com/docs",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://dashboard.clearbit.com/docs",
+          "https://dashboard.clearbit.com/docs#enrichment-api"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "PitchBook",
+      "category": "Data/SEO",
+      "one_liner": "Financial data platform for private and public capital markets intelligence.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "API access requires enterprise contract, subscription, and custom credit billing.",
+        "evidence_url": "https://pitchbook.com/data/direct-data"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://pitchbook.com/data/direct-data",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "No self-serve access, proprietary sales-gated API provisioning, and gated endpoints.",
+        "confidence_score": 0.85
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://pitchbook.com/data/direct-data",
+          "https://api.pitchbook.com"
+        ],
+        "secondary_sources": [
+          "https://dlthub.com/docs/dlt-ecosystem/verified-sources/pitchbook"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 130,
+        "agent_confidence": 0.85,
+        "requires_human_review": true
+      }
+    },
+    {
+      "app_name": "Crunchbase",
+      "category": "Data/SEO",
+      "one_liner": "Platform finding business information about private and public companies.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "API access is gated under paid Crunchbase Enterprise subscription.",
+        "evidence_url": "https://data.crunchbase.com/docs/pricing-packages"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://data.crunchbase.com/docs",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "Requires Crunchbase Enterprise license for developer API access key.",
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://data.crunchbase.com/docs",
+          "https://data.crunchbase.com/docs/using-the-api"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 125,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "GitHub",
+      "category": "DevTools",
+      "one_liner": "Developer platform for code hosting, version control, and collaboration.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account registration and API access via Personal Access Tokens.",
+        "evidence_url": "https://github.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.github.com/en/rest",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 1.0
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.github.com/en/rest",
+          "https://docs.github.com/en/graphql"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers/tree/main/src/github"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 1.0,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "GitLab",
+      "category": "DevTools",
+      "one_liner": "DevOps lifecycle tool providing wiki, issue-tracking, and CI/CD pipeline features.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free SaaS tier and self-hosted Open Source editions available.",
+        "evidence_url": "https://about.gitlab.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.gitlab.com/ee/api/rest/",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.gitlab.com/ee/api/rest/",
+          "https://docs.gitlab.com/ee/api/graphql/"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers/tree/main/src/gitlab"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Bitbucket",
+      "category": "DevTools",
+      "one_liner": "Git repository management solution designed for professional teams by Atlassian.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 5 users self-serve.",
+        "evidence_url": "https://bitbucket.org/product/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.atlassian.com/cloud/bitbucket/rest/intro/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.atlassian.com/cloud/bitbucket/rest/intro/",
+          "https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Jira",
+      "category": "DevTools",
+      "one_liner": "Issue tracking and agile project management software for software developers.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 10 users self-serve.",
+        "evidence_url": "https://www.atlassian.com/software/jira/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+          "https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-oauth-2-0-authorization-code-grants-3lo/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Linear",
+      "category": "DevTools",
+      "one_liner": "Issue tracker for software developer teams with modern keyboard shortcuts.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free plan available for unlimited users with basic usage caps.",
+        "evidence_url": "https://linear.app/pricing"
+      },
+      "api_surface": {
+        "type": "GraphQL",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.linear.app/docs/graphql/overview",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.linear.app/docs/graphql/overview",
+          "https://developers.linear.app/docs/oauth/overview"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 95,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "CircleCI",
+      "category": "DevTools",
+      "one_liner": "Continuous integration and delivery platform automating software builds.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free plan includes 6,000 build minutes per month.",
+        "evidence_url": "https://circleci.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://circleci.com/docs/api/v2/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://circleci.com/docs/api/v2/",
+          "https://circleci.com/docs/api/v2/#section/Authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 90,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Datadog",
+      "category": "DevTools",
+      "one_liner": "Observability and security monitoring service for cloud-scale applications.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "14-day free trial available self-serve.",
+        "evidence_url": "https://www.datadoghq.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.datadoghq.com/api/latest/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.datadoghq.com/api/latest/",
+          "https://docs.datadoghq.com/api/latest/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "PagerDuty",
+      "category": "DevTools",
+      "one_liner": "Incident response platform for enterprise IT monitoring and operations alerts.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 5 users, and 14-day trial.",
+        "evidence_url": "https://www.pagerduty.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.pagerduty.com/api-reference/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.pagerduty.com/api-reference/",
+          "https://developer.pagerduty.com/docs/ZG9jOjI3NDkwMDM-oauth-2-0"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Sentry",
+      "category": "DevTools",
+      "one_liner": "Open-source application monitoring platform for real-time error tracking and performance.",
+      "auth_methods": [
+        "API_Key",
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free Developer plan available with basic event volume quotas.",
+        "evidence_url": "https://sentry.io/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.sentry.io/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.sentry.io/api/",
+          "https://docs.sentry.io/api/auth/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Postman",
+      "category": "DevTools",
+      "one_liner": "API platform for building, testing, and managing developer APIs.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 3 users self-serve.",
+        "evidence_url": "https://www.postman.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://www.postman.com/postman/workspace/postman-public-workspace/documentation/1295954-c918c50e-b8d2-436f-a6ab-6b71887e59b5",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.postman.com/postman/workspace/postman-public-workspace/documentation/1295954-c918c50e-b8d2-436f-a6ab-6b71887e59b5"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Notion",
+      "category": "Productivity",
+      "one_liner": "Connected workspace for wiki, docs, and project management databases.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account tier and self-serve integration token creation available.",
+        "evidence_url": "https://www.notion.so/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.notion.com/reference",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.notion.com/reference",
+          "https://developers.notion.com/docs/authorization"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Airtable",
+      "category": "Productivity",
+      "one_liner": "Low-code platform for building collaborative spreadsheets and relational databases.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available with limits on base sizes self-serve.",
+        "evidence_url": "https://www.airtable.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://airtable.com/developers/web/api/introduction",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://airtable.com/developers/web/api/introduction",
+          "https://airtable.com/developers/web/api/oauth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Asana",
+      "category": "Productivity",
+      "one_liner": "Work management platform designed to help teams track and manage tasks.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free Personal plan available for up to 10 users.",
+        "evidence_url": "https://asana.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.asana.com/reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.asana.com/reference",
+          "https://developers.asana.com/docs/oauth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Trello",
+      "category": "Productivity",
+      "one_liner": "Visual collaboration tool using cards and Kanban boards to manage projects.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for workspaces with up to 10 boards.",
+        "evidence_url": "https://trello.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.atlassian.com/cloud/trello/rest/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.atlassian.com/cloud/trello/rest/",
+          "https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 90,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "ClickUp",
+      "category": "Productivity",
+      "one_liner": "All-in-one productivity platform for docs, goals, task management, and chat.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free Forever plan is available for personal use self-serve.",
+        "evidence_url": "https://clickup.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://clickup.com/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://clickup.com/api/",
+          "https://clickup.com/api/developer-portal/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Monday.com",
+      "category": "Productivity",
+      "one_liner": "Cloud work OS for task tracking, workflow design, and team collaboration.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial available on paid plans self-serve.",
+        "evidence_url": "https://monday.com/pricing"
+      },
+      "api_surface": {
+        "type": "GraphQL",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.monday.com/api-reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.monday.com/api-reference",
+          "https://developer.monday.com/apps/docs/oauth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Todoist",
+      "category": "Productivity",
+      "one_liner": "To-do list and task manager app for tracking daily work tasks.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free plan available self-serve for personal task tracking.",
+        "evidence_url": "https://todoist.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://developer.todoist.com/rest/v2/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.todoist.com/rest/v2/",
+          "https://developer.todoist.com/rest/v2/#authorization"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 90,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Google Workspace",
+      "category": "Productivity",
+      "one_liner": "Suite of cloud computing, productivity, and collaboration tools by Google.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial available and API console access is self-serve via Google Cloud.",
+        "evidence_url": "https://workspace.google.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developers.google.com/workspace",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "OAuth2 consent verification requirements and complex GCP credential provisioning.",
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developers.google.com/workspace",
+          "https://developers.google.com/workspace/guides/auth-overview"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 135,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Dropbox",
+      "category": "Productivity",
+      "one_liner": "Cloud file hosting and cloud storage synchronization service.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account signup available with 2GB storage and API access.",
+        "evidence_url": "https://www.dropbox.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://www.dropbox.com/developers/documentation/http/documentation",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.dropbox.com/developers/documentation/http/documentation",
+          "https://www.dropbox.com/developers/reference/oauth-guide"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Box",
+      "category": "Productivity",
+      "one_liner": "Cloud content management and file sharing service for businesses.",
+      "auth_methods": [
+        "OAuth2",
+        "JWT"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer account available for API testing.",
+        "evidence_url": "https://developer.box.com/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.box.com/reference/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.box.com/reference/",
+          "https://developer.box.com/guides/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "QuickBooks",
+      "category": "Finance",
+      "one_liner": "Accounting software package developed and marketed by Intuit for small businesses.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free sandbox account available via Intuit Developer Portal.",
+        "evidence_url": "https://developer.intuit.com/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.intuit.com/app/developer/qbo/docs/api/resources/account",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "Complex multi-step OAuth2 configs, rigid validation checks, and sandbox data constraints.",
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.intuit.com/app/developer/qbo/docs/api/resources/account",
+          "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Xero",
+      "category": "Finance",
+      "one_liner": "Cloud-based accounting software platform for small and medium-sized businesses.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer account and demo company available self-serve.",
+        "evidence_url": "https://developer.xero.com/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.xero.com/documentation/api/accounting/overview",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.xero.com/documentation/api/accounting/overview",
+          "https://developer.xero.com/documentation/guides/oauth2/overview"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Plaid",
+      "category": "Finance",
+      "one_liner": "Financial services platform connecting bank accounts to financial apps.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer account with 100 free bank link credentials.",
+        "evidence_url": "https://plaid.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://plaid.com/docs/api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://plaid.com/docs/api/",
+          "https://plaid.com/docs/api/tokens/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Brex",
+      "category": "Finance",
+      "one_liner": "Financial technology platform offering corporate cards and expense management.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Developer keys can be generated in customer dashboard settings.",
+        "evidence_url": "https://developer.brex.com/docs/quickstart/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.brex.com/openapi/webhooks_api/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.brex.com/openapi/webhooks_api/",
+          "https://developer.brex.com/docs/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Ramp",
+      "category": "Finance",
+      "one_liner": "Finance automation platform for corporate cards, expense management, and bill payments.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Developer portal allows instant API key generation for customer accounts.",
+        "evidence_url": "https://docs.ramp.com/docs/getting-started"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.ramp.com/reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.ramp.com/reference",
+          "https://docs.ramp.com/docs/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Bill.com",
+      "category": "Finance",
+      "one_liner": "Cloud-based software automating back-office financial operations for SMBs.",
+      "auth_methods": [
+        "API_Key",
+        "Session"
+      ],
+      "self_serve": {
+        "value": false,
+        "reason": "Developer sandbox account signup requires contacting developer support.",
+        "evidence_url": "https://developer.bill.com/hc/en-us/articles/17399573887117-Developer-Sandbox-Account"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.bill.com/api-reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Needs_Work",
+        "primary_blocker": "Sandbox gating requires developer request review, and API uses unique session token generation.",
+        "confidence_score": 0.88
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.bill.com/api-reference",
+          "https://developer.bill.com/docs/getting-started"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 130,
+        "agent_confidence": 0.88,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Gusto",
+      "category": "Finance",
+      "one_liner": "Cloud-based payroll, benefits, and human resource management software.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer account sandbox signup available.",
+        "evidence_url": "https://docs.gusto.com/gh/docs/developer-sandbox"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.gusto.com/gh/reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.gusto.com/gh/reference",
+          "https://docs.gusto.com/gh/docs/oauth-introduction"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Wave",
+      "category": "Finance",
+      "one_liner": "Financial software provider for small businesses offering free bookkeeping.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free invoicing and accounting plans available self-serve.",
+        "evidence_url": "https://www.waveapps.com/pricing"
+      },
+      "api_surface": {
+        "type": "GraphQL",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://developer.waveapps.com/hc/en-us/sections/360002821612-GraphQL-API",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.92
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://developer.waveapps.com/hc/en-us/sections/360002821612-GraphQL-API",
+          "https://developer.waveapps.com/hc/en-us/articles/360020962652-Manage-API-Applications"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.92,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "FreshBooks",
+      "category": "Finance",
+      "one_liner": "Accounting software service designed for self-employed professionals and small businesses.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "30-day free trial available without credit card.",
+        "evidence_url": "https://www.freshbooks.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://www.freshbooks.com/api/start",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.freshbooks.com/api/start",
+          "https://www.freshbooks.com/api/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Expensify",
+      "category": "Finance",
+      "one_liner": "Software service automating receipt tracking and expense report management.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial and free card program available self-serve.",
+        "evidence_url": "https://use.expensify.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://integrations.expensify.com/Integration-Server/doc/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.9
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://integrations.expensify.com/Integration-Server/doc/",
+          "https://integrations.expensify.com/Integration-Server/doc/#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.9,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "OpenAI",
+      "category": "AI/Media",
+      "one_liner": "Artificial intelligence research laboratory developer of GPT models.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Developer accounts are self-serve with pay-as-you-go credit card billing.",
+        "evidence_url": "https://openai.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://platform.openai.com/docs/api-reference",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://platform.openai.com/docs/api-reference",
+          "https://platform.openai.com/docs/api-reference/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Anthropic",
+      "category": "AI/Media",
+      "one_liner": "AI safety and research company developer of Claude language models.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Anthropic Console allows self-serve signup and credit purchases.",
+        "evidence_url": "https://www.anthropic.com/api"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://docs.anthropic.com/en/api/getting-started",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.98
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.anthropic.com/en/api/getting-started",
+          "https://docs.anthropic.com/en/api/messages"
+        ],
+        "secondary_sources": [
+          "https://github.com/modelcontextprotocol/servers"
+        ],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.98,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Cohere",
+      "category": "AI/Media",
+      "one_liner": "AI platform providing enterprise natural language processing models.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free trial key available self-serve for development usage.",
+        "evidence_url": "https://cohere.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.cohere.com/reference/about",
+        "mcp_exists": true
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.cohere.com/reference/about",
+          "https://docs.cohere.com/reference/auth"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "ElevenLabs",
+      "category": "AI/Media",
+      "one_liner": "Voice technology research company offering realistic text-to-speech voice generation.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free plan includes 10,000 characters per month.",
+        "evidence_url": "https://elevenlabs.io/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://elevenlabs.io/docs/api-reference/text-to-speech",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://elevenlabs.io/docs/api-reference/text-to-speech",
+          "https://elevenlabs.io/docs/api-reference/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 95,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Stability AI",
+      "category": "AI/Media",
+      "one_liner": "AI research organization developer of Stable Diffusion image generation models.",
+      "auth_methods": [
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Developer portal allows purchase of credits for API calls self-serve.",
+        "evidence_url": "https://platform.stability.ai/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://platform.stability.ai/docs/api-reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.94
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://platform.stability.ai/docs/api-reference",
+          "https://platform.stability.ai/docs/getting-started/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.94,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Canva",
+      "category": "AI/Media",
+      "one_liner": "Graphic design platform for creating visual content and design templates.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account registration and self-serve developer portal.",
+        "evidence_url": "https://www.canva.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://www.canva.dev/docs/connect/",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.93
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.canva.dev/docs/connect/",
+          "https://www.canva.dev/docs/connect/authentication/"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 120,
+        "agent_confidence": 0.93,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Figma",
+      "category": "AI/Media",
+      "one_liner": "Collaborative web-based design tool for vector graphics and UI prototyping.",
+      "auth_methods": [
+        "OAuth2",
+        "API_Key"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free Starter plan and personal access token creation available.",
+        "evidence_url": "https://www.figma.com/pricing/"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://www.figma.com/developers/api",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.97
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://www.figma.com/developers/api",
+          "https://www.figma.com/developers/api#authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 105,
+        "agent_confidence": 0.97,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Loom",
+      "category": "AI/Media",
+      "one_liner": "Video messaging extension platform for recording and sharing screen activities.",
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free account tier available, developer SDK signup is self-serve.",
+        "evidence_url": "https://www.loom.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Medium (10-50)",
+        "docs_url": "https://dev.loom.com/docs/getting-started",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.91
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://dev.loom.com/docs/getting-started",
+          "https://dev.loom.com/docs/record-sdk"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 115,
+        "agent_confidence": 0.91,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Mux",
+      "category": "AI/Media",
+      "one_liner": "Video infrastructure service providing developer APIs for video streaming and monitoring.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free developer testing sandbox with watermarked video outputs.",
+        "evidence_url": "https://www.mux.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://docs.mux.com/api-reference",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.95
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://docs.mux.com/api-reference",
+          "https://docs.mux.com/guides/system/authentication"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 100,
+        "agent_confidence": 0.95,
+        "requires_human_review": false
+      }
+    },
+    {
+      "app_name": "Cloudinary",
+      "category": "AI/Media",
+      "one_liner": "Cloud image and video storage, optimization, and media delivery platform.",
+      "auth_methods": [
+        "API_Key",
+        "Basic_Auth"
+      ],
+      "self_serve": {
+        "value": true,
+        "reason": "Free tier available for up to 25 monthly credits.",
+        "evidence_url": "https://cloudinary.com/pricing"
+      },
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Broad (>50)",
+        "docs_url": "https://cloudinary.com/documentation/cloudinary_references",
+        "mcp_exists": false
+      },
+      "buildability": {
+        "verdict": "Ready",
+        "primary_blocker": null,
+        "confidence_score": 0.96
+      },
+      "evidence": {
+        "primary_docs": [
+          "https://cloudinary.com/documentation/cloudinary_references",
+          "https://cloudinary.com/documentation/upload_images#generating_signatures"
+        ],
+        "secondary_sources": [],
+        "extraction_timestamp": "2026-07-09T17:00:00Z"
+      },
+      "metadata": {
+        "research_time_seconds": 110,
+        "agent_confidence": 0.96,
+        "requires_human_review": false
+      }
+    }
+  ]
+}

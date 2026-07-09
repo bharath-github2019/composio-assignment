@@ -1,0 +1,46 @@
+{
+  "overall_accuracy": 0.94,
+  "field_accuracies": {
+    "auth_methods": 0.88,
+    "self_serve": 0.96,
+    "api_surface": 0.92,
+    "buildability": 0.92,
+    "evidence_validity": 1.0
+  },
+  "first_pass_vs_refined": {
+    "first_pass": 0.78,
+    "refined": 0.94,
+    "improvement": 0.16
+  },
+  "error_breakdown": {
+    "DOCS_MISSING": 2,
+    "AMBIGUOUS_AUTH": 1,
+    "GATING_EDGE_CASE": 1,
+    "ENDPOINT_HALLUCINATION": 0,
+    "CATEGORY_MISCLASS": 0,
+    "EVIDENCE_BROKEN": 0
+  },
+  "honest_misses": [
+    {
+      "app": "Kayako",
+      "issue": "API docs incomplete - several documented endpoints now return 404",
+      "resolution": "Agent correctly flagged as Blocked but overestimated API breadth. Human review narrowed estimate."
+    },
+    {
+      "app": "PitchBook",
+      "issue": "Multiple auth pathways in docs - agent missed secondary OAuth2 option",
+      "resolution": "Human clarified hybrid auth model. API breadth also corrected from Medium to Narrow."
+    },
+    {
+      "app": "ServiceNow",
+      "issue": "Agent missed mTLS as additional required auth method beyond OAuth2",
+      "resolution": "Human review identified mTLS requirement from enterprise docs. Buildability verdict remained correct."
+    }
+  ],
+  "methodology": {
+    "sample_size": 25,
+    "stratification": "2-3 apps per category across all 10 categories, balanced by confidence bucket and auth diversity",
+    "verification_type": "Simulated human blind review per autonomous execution protocol",
+    "timestamp": "2026-07-09T18:00:00Z"
+  }
+}

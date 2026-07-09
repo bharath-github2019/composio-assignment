@@ -1,0 +1,41 @@
+composio-research-submission/
+├── index.html                    # Original static dashboard
+├── README.md
+├── .env.example
+├── .gitignore
+├── final_directory_tree.txt
+├── agent/
+│   ├── research.py               # CLI query tool
+│   ├── main.py
+│   ├── schemas.py
+│   ├── prompts.py
+│   ├── verifier.py
+│   ├── utils.py
+│   ├── generate_raw_results.py
+│   ├── test_validation.py
+│   ├── requirements.txt
+│   ├── crm_apps.py
+│   ├── support_apps.py
+│   ├── messaging_apps.py
+│   ├── marketing_apps.py
+│   ├── ecommerce_apps.py
+│   ├── data_seo_apps.py
+│   ├── devtools_apps.py
+│   ├── productivity_apps.py
+│   ├── finance_apps.py
+│   ├── ai_media_apps.py
+│   └── sample_verified.csv
+├── dashboard/
+│   └── index.html                # Interactive visual dashboard
+├── data/
+│   ├── apps.json
+│   ├── raw_results.json
+│   ├── test_results_sample.json
+│   ├── patterns_analysis.json
+│   ├── headline_insights.md
+│   ├── accuracy_metrics.json
+│   ├── verification_report.md
+│   └── verification_sample_verified.csv
+└── demo/
+    ├── agent_walkthrough.mp4
+    └── html_preview.png
